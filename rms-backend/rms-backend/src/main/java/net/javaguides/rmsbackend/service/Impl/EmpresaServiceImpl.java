@@ -35,7 +35,7 @@ public class EmpresaServiceImpl implements EmpresaService {
     }
 
     @Override
-    public List<EmpresaDto> getAllEmpresas() {
+    public List<EmpresaDto> getAllEmpresa() {
         List<Empresa> empresas = empresaRepository.findAll();
         return empresas.stream().map((empresa) -> EmpresaMapper.mapToEmpresaDto(empresa))
                 .collect(Collectors.toList());

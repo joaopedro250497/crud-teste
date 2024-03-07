@@ -9,7 +9,7 @@ public interface EmpresaService {
 
     EmpresaDto getEmpresaById(Long empresaId);
 
-    List<EmpresaDto> getAllEmpresas();
+    List<EmpresaDto> getAllEmpresa();
 
     EmpresaDto updateEmpresa(Long empresaId, EmpresaDto updatedEmpresa);
 

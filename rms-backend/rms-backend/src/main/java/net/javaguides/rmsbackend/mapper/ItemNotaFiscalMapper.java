@@ -14,7 +14,7 @@ public class ItemNotaFiscalMapper {
         );
     }
 
-    public static ItemNotaFiscal mapToItemNotaFiscal(ItemNotaFiscal itemNotaFiscal){
+    public static ItemNotaFiscal mapToItemNotaFiscal(ItemNotaFiscalDto itemNotaFiscal){
         return new ItemNotaFiscal(
                 itemNotaFiscal.getId(),
                 itemNotaFiscal.getQuantidade(),

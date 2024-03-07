@@ -11,7 +11,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/empresas")
+@RequestMapping("/api/empresa")
 public class EmpresaController {
 
     private EmpresaService empresaService;
@@ -32,9 +32,9 @@ public class EmpresaController {
 
     // Build Get All Empresas REST API
     @GetMapping
-    public ResponseEntity<List<EmpresaDto>> getAllEmpresas(){
-        List<EmpresaDto> empresas = empresaService.getAllEmpresas();
-        return ResponseEntity.ok(empresas);
+    public ResponseEntity<List<EmpresaDto>> getAllEmpresa(){
+        List<EmpresaDto> empresa = empresaService.getAllEmpresa();
+        return ResponseEntity.ok(empresa);
     }
 
     // Build Update Empresa REST API
