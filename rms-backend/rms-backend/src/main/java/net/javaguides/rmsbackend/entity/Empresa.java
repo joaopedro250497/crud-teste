@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "empresas")
+@Table(name = "empresa")
 public class Empresa {
 
     @Id
@@ -27,7 +27,7 @@ public class Empresa {
     @Column(name = "nome_fantasia")
     private String nomeFantasia;
 
-    @Column(name = "inscricao_estadual", nullable = false, unique = true)
+    @Column(name = "inscricao_estadual", unique = true)
     private String inscricaoEstadual;
 
 }
